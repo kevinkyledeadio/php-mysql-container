@@ -1,35 +1,23 @@
 <?php
     include ("connection.php");
 ?>
-<html>
-    <head>
-        <title>Display Users</title>
-    </head>
-    <body>
-        <h2>Display Users</h2>
-        <a href="add_user.php">Add User</a>
-        <table border="1">
-            <tr>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Email</th>
-                <th>Username</th>
-                <th>Password</th>
-            </tr>
-            <?php
-                $query = "SELECT * FROM user";
-                $result = mysqli_query($conn, $query);
-                while($row = mysqli_fetch_array($result)){
-            ?>
-            <tr>
-                <td><?php echo $row['first_name']; ?></td>
-                <td><?php echo $row['last_name']; ?></td>
-                <td><?php echo $row['email']; ?></td>
-                <td><?php echo $row['username']; ?></td>
-                <td><?php echo $row['password']; ?></td>
-            </tr>
-            <?php
-                }
-            ?>
-        </table>
-    </body>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Local-bookstore</h1>
+    <nav>
+    <ul>
+        <li><a href="customers.php">Customers</a></li>
+        <li><a href="books.php">Books</a></li>
+        <li><a href="employees.php">Employees</a></li>
+    </ul>
+</nav>
+</body>
+</html>
+
