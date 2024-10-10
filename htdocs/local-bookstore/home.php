@@ -10,7 +10,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Local-bookstore</h1>
+    <h1>Localbookstore</h1>
     <nav>
     <ul>
         <li><a href="customers.php">Customers</a></li>
@@ -19,5 +19,5 @@
     </ul>
 </nav>
 </body>
-</html>
+<
 

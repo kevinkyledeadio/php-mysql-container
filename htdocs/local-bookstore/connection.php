@@ -1,10 +1,16 @@
 <?php
+    session_start();
+    $server = "127.0.0.1";
+    $username = "mariadb";
+    $password = "mariadb";
+    $dbname = "mariadb";
 
-    $Connection = mysqli_connect("127.0.0.1", "mariadb", "mariadb", "mariadb");
-    
-    if (!$Connection){
-        echo "Sql Error Occurred" . mysqli_connect_error();
-    }else{
-        echo "SQL Connected Successfully";
+    $conn = mysqli_connect($server, $username, $password, $dbname);
+
+    //check the connection if successfull
+    if (!$conn){
+        die ("connection failed: ". mysqli_connect_error());
     }
+
+
 ?>
